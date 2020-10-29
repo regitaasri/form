@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form>
+        <center><h1>Student Registration From</h1></center></font>        
+        <table align="center">
+            <tr>
+                <td align="right" colspan="4">
+                    <label for="date">DATE</label>
+                    <input type="date" id="date" name="date"> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h3>PERSONAL INFORMATION</h3>
+                    <hr color="black">
+                </td>
+            </tr>
+            <tr>
+                <td width="250">
+                    <label for="name">NAME</label>
+                </td>
+                <td colspan="4">
+                    <input type="text" id="name" name="name" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">DATE OF BIRTH</label>
+                </td>
+                <td colspan="4">
+                    <input type="date" id="date" name="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="language">MASTERED LANGUAGE</label>
+                </td>
+                <td colspan="3">
+                    <input type="checkbox">Indonesia
+                    <input type="checkbox">Inggris
+                    <input type="checkbox">Mandarin
+                    <input type="checkbox">Arab
+                    <input type="checkbox">Jepang
+                    <input type="checkbox">Korea
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h3>CONTACT INFORMATION</h3>
+                    <hr color="black">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">ADDRESS</label>
+                </td>
+                <td colspan="4">
+                    <textarea rows="2" cols="57" id="address" name="address">
+                        </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">CITY</label>
+                </td>
+                <td>
+                    <input type="text"id="city" name="city">
+                <td> 
+                    <label for="province_state">PROVINCE/STATE</label>
+                </td>
+                <td>
+                    <select name="province_state">
+                        <option value="">---Select Province---</option>
+                        <option value="ac">Aceh</option>
+                        <option value="su">Sumatra Utara</option>
+                        <option value="sb">Sumatra Brat</option>
+                        <option value="ri">Riau</option>
+                        <option value="kr">Kepulauan Riau</option>
+                        <option value="ja">Jambi</option>
+                        <option value="be">Bengkulu</option>
+                        <option value="ss">Sumatera Sekatan</option>
+                        <option value="bb">Bangka Belitung</option>
+                        <option value="la">Lampung</option>
+                        <option value="bt">Banten</option>
+                        <option value="jb">Jawa Barat</option>
+                        <option value="jk">Jakarta</option>
+                        <option value="jt">Jawa Tengah</option>
+                        <option value="yo">Yogyakarta</option>
+                        <option value="jl">Jawa Timur</option>
+                        <option value="ba">Bali</option>
+                        <option value="nb">NTB</option>
+                        <option value="nt">NTT</option>
+                        <option value="kb">Kalimantan Barat</option>
+                        <option value="ks">Kalimantan Selatan</option>
+                        <option value="kt">Kalimantan Tengah</option>
+                        <option value="ki">Kalimantan Timur</option>
+                        <option value="ku">Kalimantan Utara</option>
+                        <option value="go">Gorontalo</option>
+                        <option value="sr">Sulawesi Barat</option>
+                        <option value="sn">Sulawesi Selatan</option>
+                        <option value="st">Sulawesi Tengah</option>
+                        <option value="sg">Sulawesi Tenggara</option>
+                        <option value="sa">Sulawesi Utara</option>
+                        <option value="ma">Maluku</option>
+                        <option value="mu">Maluku Utara</option>
+                        <option value="pb">Papua Barat</option>
+                        <option value="pa">Papua</option>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zip_kode">ZIP CODE</label required>
+                </td>
+                <td>
+                    <input type="number" id="zip_kode" name="zip_kode">
+                </td>
+                <td>
+                    <label for="country">COUNTRY</label>
+                </td>
+                <td>
+                    <input type="text" id="country" name="country">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">PHONE</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" title="Phone filled with more than 10 digits" required>
+                </td>
+                <td>
+                    <label for="email">EMAIL</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="membership_type">MEMBERSHIP TYPE</label>
+                </td>
+                <td>
+                    <input type="radio" name="membership_type" id="regular" value="regular">Regular
+                </td>
+                <td>
+                    <input type="radio" name="membership_type" id="premium" value="premium">Premium
+                </td>
+                <td>
+                    <input type="radio" name="membership_type" name="vip" value="vip">VIP
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h3>COURSE INFORMATION</h3>
+                    <hr color="black">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course_name">COURSE NAME</label>
+                </td>
+                <td colspan="4">
+                    <input type="text" id="course_name" name="course_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="payment_details">PAYMENT DETAILS</label>
+                </td>
+                <td>
+                    <input type="radio" name="payment_details" id="cash" value="cash">Cash
+                </td>
+                <td>
+                    <input type="radio" name="payment_details" id="cheque" value="cheque">Cheque
+                </td>
+                <td>
+                    <input type="radio" name="payment_details" id="credit_card" value="credit_card">Credit Card
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments">COMMENTS</label>
+                </td>
+                <td colspan="4">
+                    <textarea rows="3" cols="57" id="comments" name="comments">
+                        </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4><label for="interest">How interested you are in this course</label></h4>
+                </td>
+                <td>
+                    <input type="range" min="0" max="10" id="age" name="age">
+                </td>
+             </tr>
+            <tr>
+                <td colspan="4" align="center" bgcolor="gray">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<html>
